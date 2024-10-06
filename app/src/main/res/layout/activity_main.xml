@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encuesta de Salud Mental"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cómo te sientes en general?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSentimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy feliz"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feliz"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Neutral"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Triste"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy triste"/>
+        </RadioGroup>
+
+        <!-- Pregunta 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. En las últimas dos semanas, ¿con qué frecuencia has sentido que no puedes controlar las cosas importantes de tu vida?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nunca"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rara vez"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A veces"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frecuentemente"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siempre"/>
+        </RadioGroup>
+
+        <!-- Pregunta 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. ¿Te sientes abrumado por el estrés o la ansiedad?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupEstres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nunca"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rara vez"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A veces"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frecuentemente"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siempre"/>
+        </RadioGroup>
+
+        <!-- Pregunta 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. ¿Con qué frecuencia has tenido dificultades para dormir (insomnio)?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupInsomnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nunca"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rara vez"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A veces"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Frecuentemente"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siempre"/>
+        </RadioGroup>
+
+        <!-- Pregunta 5 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. ¿Cómo calificarías tu nivel de apoyo social?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupApoyoSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy bajo"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bajo"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Promedio"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alto"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy alto"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupSoledad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nunca" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rara vez" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A veces" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frecuentemente" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siempre" />
+            </RadioGroup>
+        </RadioGroup>
+
+        <!-- Pregunta 6 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. ¿Con qué frecuencia te sientes solo/a?" />
+
+        <!-- Pregunta 7 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. ¿Has considerado buscar ayuda profesional para tu salud mental en el último año?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupAyudaProfesional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sí"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No"/>
+        </RadioGroup>
+
+        <!-- Pregunta 8 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. ¿Qué tan cómodo/a te sientes hablando sobre tus problemas de salud mental con amigos o familiares?" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupComodidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy incómodo"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Incómodo"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Neutral"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cómodo"/>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Muy cómodo"/>
+        </RadioGroup>
+
+        <!-- Pregunta 9 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9. ¿Qué estrategias utilizas para manejar el estrés? (puedes seleccionar más de una opción)" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEjercicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxMeditacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meditación o mindfulness"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxHablar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hablar con amigos o familiares"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxCreatividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hacer actividades creativas"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxOtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros (especificar)"/>
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
